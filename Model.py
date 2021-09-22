@@ -88,7 +88,7 @@ class effnet:
         return self.judge_result
 
 if __name__ == '__main__':
-    dirname = r"C:\Users\David2_Gu\Desktop\ASUS_David.Gu\Project\LCD_Recognition_20200130\package\test_pic"
+    dirname = r".\package\test_pic"
     filename = []
     for f in listdir(dirname):
         filename += [join(dirname, f)]
