@@ -92,8 +92,6 @@ class effnet:
         return self.judge_result
 
 if __name__ == '__main__':
-    # dirname = r"C:\Users\David2_Gu\Desktop\ASUS_David.Gu\Project\LCD_Recognition_20200130\package\test_pic"
-    # dirname = r"D:\Side Work Data\LCD photos\3rd photo test\310_swl\1-WL"
     dirname = r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\3-NG-Spot"
     filename = []
     for f in listdir(dirname):
