@@ -1,12 +1,12 @@
 # Tkinter_GUI
 A simple script to design a GUI via Tkinter
 
-## Installation:
+## Installation:  
 
-Under python=3.6, try to use the command:  
-
-pip install -r requirements.txt  
-
+●python=3.6  
+●tensorflow=1.12.0  
+●opencv-python=4.2.0.32  
+●Keras=1.0.8  
 
 ## Steps to manipulate the gui:
 
