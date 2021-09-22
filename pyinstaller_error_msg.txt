@@ -1,0 +1,33 @@
+1. 點選start.bat檔
+
+2. 打包exe黨步驟:https://www.itread01.com/content/1545262766.html
+
+產生spec黨檔:  pyi-makespec .\LCD_GUI.py
+
+
+
+1. 打包遇到max recursion 問題
+import sys
+sys.setrecursionlimit(1000000)
+
+
+2. 打包遇到'utf-8' codec can't decode byte 0xb5 in position 122: invalid start byte
+在你打包的命令行中先输入chcp 65001 然后再输入打包命令。 
+pyinstaller -D xxx.py or xxx.spec
+
+
+3. 遇到tensorflow module not found問題 (執行.exe時)
+I fixed this problem by making dirs as ".../dist/[MmyPyName]/tensorflow/python/_pywrap_tensorflow_internal.pyd"
+這裡的[MmyPyName]為 LCD_GUI資料夾
+
+
+4. 遇到No such file or directory: ....\\Dask\\dask.yaml (執行.exe時)
+在dist/[MmyPyName]下建 /dask/dask.yaml (同2做法)
+可以直接從/Lib/site-packages/dask/dask.yaml copy過去
+
+
+5. 找不到.h5 檔案 (執行時.exe時)
+記得要將.h5檔複製到 LCD_GUI下才可執行
+
+
+6. 3/24修改resize與前處理再次打包成新版本
